@@ -25,6 +25,12 @@ body {
   margin: 0;
 }
 
+h5.device-detect {
+  width: 100vw;
+  display: flex;
+  text-align: center;
+}
+
 .flex {
   display: flex;
 }

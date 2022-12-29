@@ -2,11 +2,13 @@
   "name": "minecraft",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "homepage": "http://ferii007.github.io/mindcrash",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@react-three/cannon": "^6.4.0",
@@ -15,6 +17,7 @@
     "gh-pages": "^4.0.0",
     "nanoid": "^4.0.0",
     "react": "^18.2.0",
+    "react-device-detect": "^2.2.2",
     "react-dom": "^18.2.0",
     "three": "^0.145.0",
     "zustand": "^4.1.1"
